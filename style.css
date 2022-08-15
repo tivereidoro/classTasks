@@ -1,0 +1,263 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+    /* overflow-x: hidden; */
+}
+
+.header {
+    background:url(bgImage.jpg);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.nav {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 0px 5%;
+    position: sticky;
+    top: 0px;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.nav img {
+    width: 50px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav .links li {
+    height: 100%;
+}
+
+.nav .links li a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: medium;
+    font-size: 20px;
+    color: black;
+}
+
+.nav .links li a:hover {
+    background-color: white;
+}
+
+.nav .icons li a {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+    color: black;
+    font-size: 30px;
+}
+
+.text {
+    margin-top: 120px;
+    padding: 0px 10%;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.text h1 {
+    margin-bottom: 20px;
+}
+
+.text .lorem {
+    margin-bottom: 50px;
+}
+
+.start {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    padding: 20px 50px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-in-out
+}
+
+.start:hover {
+    color: black;
+    background-color: white;
+}
+
+.mobile-nav {
+    background-color: rgb(236, 236, 236);
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+.mobile-nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mobile-nav .links {
+    display: block;
+    text-align: center;
+}
+
+.mobile-nav .links li a {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.mobile-nav .icons li a {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 5px;
+    color: black;
+    font-size: 30px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.features {
+    padding: 0px 10%;
+    margin-top: 20px;
+    background-color: rgb(236, 236, 236);
+    padding: 0px 10%;
+    position: relative;
+}
+
+.features .img {
+    width: 400px;
+    height: 500px;
+    flex: 1;
+    padding: 20px 0px;
+    position: absolute;
+    /* z-index: -1; */
+}
+
+.features img {
+    width: 400px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.features .txt {
+    background-color: white;
+    margin-left: 300px;
+    padding-left: 150px;
+    padding-top: 50px;
+    height: 500px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.features .txt h1 {
+    margin-bottom: 30px;
+}
+
+.features .txt p {
+    margin-bottom: 20px;
+}
+
+.features .txt ul {
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+.features .txt ul li {
+    margin-bottom: 10px;
+}
+
+.features .txt a {
+    background-color: #d1e7e7;
+    border-radius: 5px;
+    padding: 20px 50px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.features .txt a:hover {
+    color: white;
+    background-color: black;
+}
+
+.pac-section {
+    /* margin-top: ; */
+    padding: 0px 10%;
+    width: 100%;
+
+}
+
+.pac-section ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+@media screen and (max-width: 980px) {
+    .hamburger-menu {
+        display: block;
+        font-size: 25px;
+        color: black;
+    }
+
+    .hamburger-menu:hover {
+        color: black;
+    }
+
+    .nav .links li a {
+        display: none;
+    }
+    
+    .nav .icons li a {
+        display: none;
+    }
+
+    .showing {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav .logo {
+        font-size: 20px;
+    }
+    
+    .nav img {
+        width: 30px;
+    }
+}
